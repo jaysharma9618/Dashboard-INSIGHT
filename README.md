@@ -1,16 +1,174 @@
-# React + Vite
+# React + Tailwind Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **responsive dashboard UI** built using **React, Vite, and Tailwind CSS**.
+The project demonstrates reusable UI components, data visualization using charts, and a scalable frontend structure suitable for admin panels or analytics dashboards.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Tech Stack
 
-## React Compiler
+The project uses the following technologies and versions:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Core
 
-## Expanding the ESLint configuration
+* React – v19.2.4
+* React DOM – v19.2.4
+* Vite – v7.3.1
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Styling
+
+* Tailwind CSS – v4.2.1
+
+### Charts
+
+* Recharts – v3.8.0
+
+### Icons
+
+* Lucide React – v0.577.0
+
+### Build & Plugins
+
+* @vitejs/plugin-react – v4.7.0
+* @tailwindcss/vite – v4.2.1
+
+### Development Tools
+
+* ESLint – v9.39.4
+* eslint-plugin-react-hooks – v7.0.1
+* eslint-plugin-react-refresh – v0.5.2
+
+Dependencies and scripts are configured in `package.json`. 
+
+---
+
+# Requirements
+
+Make sure the following are installed:
+
+* Node.js (v18 or higher recommended)
+* npm
+
+Check installed versions:
+
+```bash
+node -v
+npm -v
+```
+
+---
+
+# Getting Started
+
+Follow these steps to run the project locally.
+
+---
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+```
+
+Navigate into the project folder:
+
+```bash
+cd YOUR_REPO_NAME
+```
+
+---
+
+## 2. Install Dependencies
+
+Install all required packages:
+
+```bash
+npm install
+```
+
+This will install React, Tailwind CSS, Recharts, and other dependencies defined in the project. 
+
+---
+
+## 3. Start Development Server
+
+Run:
+
+```bash
+npm run dev
+```
+
+The development server will start using Vite.
+
+Open your browser and go to:
+
+```
+http://localhost:5173
+```
+
+---
+
+# Available Scripts
+
+### Start Development Server
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+### Run Linter
+
+```bash
+npm run lint
+```
+
+---
+
+# Project Structure
+
+```
+dashboard/
+│
+├── src/
+│   ├── components
+│   ├── pages
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── public
+├── index.html
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
+```
+
+Tailwind scans files inside `index.html` and `src` to generate styles. 
+
+Vite is configured with React and Tailwind plugins for fast development and builds. 
+
+---
+
+# Notes
+
+* `node_modules` is not included in the repository.
+* Run `npm install` after cloning the project.
+* The project uses **Vite for fast hot reload and optimized builds**.
+* Tailwind CSS is used for utility-first styling.
+
+---
+
+# License
+
+This project is open-source and can be used for learning and development purposes.
